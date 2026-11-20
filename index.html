@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample HTML Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f6fb;
+        margin: 0;
+        color: #1e293b;
+      }
+      header {
+        background: #4338ca;
+        color: white;
+        padding: 28px;
+        text-align: center;
+      }
+      main {
+        max-width: 680px;
+        margin: 48px auto;
+        padding: 28px;
+        background: white;
+        border-radius: 14px;
+        box-shadow: 0 8px 24px #00000012;
+      }
+      button {
+        background: #4338ca;
+        color: white;
+        border: 0;
+        padding: 12px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #3730a3;
+      }
+      #message {
+        margin-top: 16px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Website</h1>
+      <p>A simple HTML, CSS and JavaScript example</p>
+    </header>
+    <main>
+      <h2>Hello, World! 👋</h2>
+      <p>
+        This sample page demonstrates a responsive layout and an interactive
+        button.
+      </p>
+      <button onclick="showMessage()">Click Me</button>
+      <p id="message" aria-live="polite"></p>
+    </main>
+    <script>
+      function showMessage() {
+        document.getElementById("message").textContent =
+          "Success! Your JavaScript is working.";
+      }
+    </script>
+  </body>
+</html>
